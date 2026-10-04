@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="bot-icon">🤖</div>
+        <h1>AI Chatbot</h1>
+        <p>Chat with your virtual assistant</p>
+    </header>
+
+    <div class="chat-container">
+
+        <div id="chatBox" class="chat-box">
+
+            <div class="message bot">
+                <div class="avatar">🤖</div>
+                <div class="text">
+                    Hello! 👋 I am your AI chatbot. How can I help you?
+                </div>
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message..."
+                onkeydown="handleEnter(event)"
+            >
+
+            <button onclick="startVoice()" class="voice-btn">
+                🎤
+            </button>
+
+            <button onclick="sendMessage()" class="send-btn">
+                ➤
+            </button>
+
+        </div>
+
+        <p id="voiceStatus"></p>
+
+    </div>
+
+    <div class="quick-buttons">
+
+        <h3>Quick Questions</h3>
+
+        <button onclick="quickMessage('Hello')">
+            👋 Hello
+        </button>
+
+        <button onclick="quickMessage('What can you do?')">
+            ❓ What can you do?
+        </button>
+
+        <button onclick="quickMessage('What is AI?')">
+            🧠 What is AI?
+        </button>
+
+        <button onclick="quickMessage('Tell me about yourself')">
+            🤖 About You
+        </button>
+
+        <button onclick="quickMessage('Thank you')">
+            ❤️ Thank You
+        </button>
+
+    </div>
+
+    <footer>
+        <p>AI Chatbot | Web Technology Mini Project</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
